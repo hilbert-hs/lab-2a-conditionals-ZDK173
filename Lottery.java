@@ -12,7 +12,6 @@ public static void main(String[] args) {
   int powNum = scan.nextInt();
   scan.close();
   compareLottery(num1, num2, num3, num4, num5, powNum);
-
 } 
   public static void compareLottery(int _num1, int _num2, int _num3, int _num4, int _num5, int _powNum)
   {
@@ -23,11 +22,9 @@ public static void main(String[] args) {
     int lotteryNum4 = (int) (Math.random() * 60 +1);
     int lotteryNum5 = (int) (Math.random() * 60 +1);
     int powerballNum = (int) (Math.random() * 40 +1);
-
      System.out.println("The winning combonation is " + lotteryNum1 +" "+ lotteryNum2 +" "+ lotteryNum3 +" "+ lotteryNum4 +" "+ lotteryNum5 +" "+ "Power Ball: " + powerballNum);
      System.out.println("");
      System.out.println("Your combonation is " + _num1 +" "+ _num2 +" "+ _num3 +" "+ _num4 +" "+ _num5 +" "+ "Power Ball: " +_powNum);
-
      if (_powNum == powerballNum)
      {
         prize += 500;
@@ -52,7 +49,6 @@ public static void main(String[] args) {
      {
         prize += 50;
      }
-     
      if (prize > 0)
      {
       System.out.println("Congratulations! Your prize is $" + prize);
@@ -62,8 +58,4 @@ public static void main(String[] args) {
       System.out.println("Sorry you did not win.");
      }
     }
-
 }
-
-
-
